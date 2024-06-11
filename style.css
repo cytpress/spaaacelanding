@@ -1,4 +1,4 @@
-@import '/css/custom.css';
+@import './css/custom.css';
 
 :root {
     --primary: #F28F2A;
@@ -65,6 +65,11 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.navbar-toggler {
+    position: absolute;
+    right: 128px;
+    top: 16px;
+}
 
 .bg {
     background-color: var(--backgroundBlack);
@@ -200,7 +205,7 @@ body {
     letter-spacing: 0.1rem;
     border: #F28F2A 2px solid;
     border-radius: 100px;
-    padding: 1rem 1.5rem ;
+    padding: 1rem 1.5rem;
     margin-bottom: 16px;
     margin-left: 16px;
 }
@@ -214,6 +219,7 @@ body {
     border: #F28F2A 2px solid;
     border-radius: 100px;
 }
+
 .card-btn:hover {
     color: var(--textWhite);
     line-height: 140%;
@@ -223,13 +229,14 @@ body {
     border-radius: 100px;
 }
 
-.expimg{
+.expimg {
     border-radius: 16px;
     object-fit: cover;
     height: 360px;
+    width: 100%;
 }
 
-.exph1{
+.exph1 {
     color: var(--textWhite);
     line-height: 140%;
     font-size: 32px;
@@ -238,7 +245,7 @@ body {
     letter-spacing: 0.1em;
 }
 
-.exptext{
+.exptext {
     color: var(--textWhite);
     line-height: 140%;
     font-size: 16px;
@@ -247,11 +254,155 @@ body {
     letter-spacing: 0.1em;
 }
 
-.accordionhead{
+.accordionhead {
+    color: var(--textWhite);
+    line-height: 140%;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.accordion-body {
     color: var(--textWhite);
     line-height: 140%;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    letter-spacing: 0.1em;    
+    letter-spacing: 0.1em;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--textWhite);
+    background-color: none;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DEE2E6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DEE2E6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+@media(max-width: 1366px) {
+    .h1txt {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 48px;
+    }
+
+    .headsubtxt {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 24px;
+    }
+
+    .btntxt1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 14px;
+        border: #F28F2A solid 2px;
+        border-radius: 100px;
+        padding: 16px 24px;
+    }
+
+    .btntxt1:focus {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 14px;
+        border: #F28F2A solid 2px;
+        border-radius: 100px;
+        padding: 16px 24px;
+        color: var(--textWhite)
+    }
+
+    .btntxt2 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 14px;
+        border: #4D617E solid 2px;
+        border-radius: 100px;
+        padding: 16px 24px;
+    }
+
+    .btntxt2:focus {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 14px;
+        border: #4D617E solid 2px;
+        border-radius: 100px;
+        padding: 16px 24px;
+        color: var(--textWhite)
+    }
+
+    .divh1 {
+        margin: 0px 0px 24px 0px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 992px) {
+    .px128 {
+        padding: 0 64px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 64px;
+        top: 16px;
+    }
+
+    .h1txt {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 40px;
+    }
+    .headsubtxt {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .px128 {
+        padding: 0 24px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 24px;
+        top: 16px;
+    }
 }
