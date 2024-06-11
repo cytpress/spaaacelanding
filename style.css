@@ -1,3 +1,5 @@
+@import '/css/custom.css';
+
 :root {
     --primary: #F28F2A;
     --secondary: #4D617E;
@@ -5,15 +7,22 @@
     --textWhite: #DEE2E6;
 }
 
+body{
+    color: var(--textWhite);
+    background-color: var(--backgroundBlack);
+    /* padding: 0 128px; */
+}
 /* <uniquifier>: Use a unique and descriptive class name 
 <weight>: Use a value from 100 to 900 */
 
-/* .montserrat-<uniquifier> {
+.montserrat-regular {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
-} */
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+}
 
 .audiowide-regular {
     font-family: "Audiowide", sans-serif;
@@ -23,10 +32,152 @@
     color: var(--textWhite);
 }
 
-.nav-link {
-    color: --textWhite;
+.mx128 {
+    padding: 0 128px;
 }
+
+.px128{
+    padding: 0 128px;
+}
+
+.textw {
+    color: var(--textWhite);
+}
+
+.hero-bgimg {
+    background-image: url('imges/earth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nav-sign-up {
+    background: rgb(211, 101, 32);
+    background: linear-gradient(45deg, rgba(211, 101, 32, 1) 0%, rgba(242, 143, 42, 1) 100%);
+    border-radius: 100px;
+}
+
+.navbg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:visited {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 .bg {
     background-color: var(--backgroundBlack);
+}
+
+.hero {
+    height: 40vw;
+}
+
+.heroposition {
+    /* margin-top: 9em; */
+    margin-top: 8vw;
+}
+
+.h1txt {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 64px;
+}
+
+.headsubtxt {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 32px;
+}
+
+.btntxt1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    border: #F28F2A solid 2px;
+    border-radius: 100px;
+    padding: 16px 24px;
+}
+.btntxt1:focus {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    border: #F28F2A solid 2px;
+    border-radius: 100px;
+    padding: 16px 24px;
+    color: var(--textWhite)
+}
+
+.btntxt2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    border: #4D617E solid 2px;
+    border-radius: 100px;
+    padding: 16px 24px;
+}
+
+.btntxt2:focus {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    border: #4D617E solid 2px;
+    border-radius: 100px;
+    padding: 16px 24px;
+    color: var(--textWhite)
+}
+.cardh1{
+    margin: 64px 0px 32px 0px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+}
+
+
+.card-body {
+    background-color: var(--backgroundBlack);
+}
+
+.card-title {
+    color: var(--textWhite);
+    letter-spacing: 0.1rem;
+    line-height: 1.4;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.card-text {
+    color: var(--textWhite);
+    line-height: 1.4;
+    font-size: px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    height: 100vh;
 }
